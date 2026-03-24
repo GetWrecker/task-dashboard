@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header>
+    <h1>Task Manager</h1>
+    <input id="search" placeholder="Search..." />
+  </header>
+
+  <div class="stats">
+    <span>Total: <b id="total"></b></span>
+    <span>Done: <b id="done"></b></span>
+    <span>Pending: <b id="pending"></b></span>
+  </div>
+
+  <div class="form">
+    <input id="taskInput" placeholder="New task..." />
+    <select id="priority">
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+    <button id="addBtn">Add</button>
+  </div>
+
+  <div class="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="done">Done</button>
+    <button data-filter="pending">Pending</button>
+  </div>
+
+  <ul id="list"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
